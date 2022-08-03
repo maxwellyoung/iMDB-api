@@ -2,6 +2,9 @@
   "name": "my-fullstack-collection",
   "version": "0.1.0",
   "description": "Todo Full Stack",
+  "engines": {
+    "node": "16.x"
+},
   "repository": "https://https://github.com/dev-academy-challenges/todo-full-stack",
   "main": "server/index.js",
   "scripts": {
