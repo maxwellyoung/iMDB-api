@@ -1,20 +1,30 @@
+// body {
+  
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   margin: 0;
+//   padding: 20px;
+//   font: 14px "Helvetica Neue", Helvetica, Arial, sans-serif;
+// }
+
 body {
-  position: absolute;
+  background-color: rgba(211, 211, 211, 0.762);
   top: 0;
   left: 0;
   margin: 0;
-  padding: 20px;
-  font: 14px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  height: 100%;
 }
 
-.show-albums {
-  border: 1px solid black;
+
+
+#app > section > div > div > figure > img {
+  max-width: 23vw;
 }
 
-.react {
-  background-color: aliceblue;
+#app > section > div > div > figure > img:hover {
+  transition: .3s;
+  max-width: 26vw;
+
 }
 
-.redux-thunk {
-  background-color: bisque;
-}

@@ -1,8 +1,9 @@
 import { combineReducers } from 'redux'
-import albumsReducer from './albumsReducer'
 
-// import stuff from './stuff'
+import movies from './movies'
 
 export default combineReducers({
-  albums: albumsReducer
+	movies: movies,
 })
+
+// global state refers to redux state v component state
