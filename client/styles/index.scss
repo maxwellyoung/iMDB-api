@@ -9,11 +9,20 @@
 // }
 
 body {
-  background-color: rgba(211, 211, 211, 0.762);
   top: 0;
   left: 0;
   margin: 0;
   height: 100%;
+  // background-color: rgba(211, 211, 211, 0.762);
+}
+
+.movie__list {
+  display: grid;
+	grid-template-columns: [col1] 33% [col2] 33% [col3] 33%;
+	grid-gap: 10px;
+	grid-template-rows: [row1] 47% [row2] 47%;
+	text-align: center;
+	color: #FFF;
 }
 
 
@@ -24,7 +33,52 @@ body {
 
 #app > section > div > div > figure > img:hover {
   transition: .3s;
-  max-width: 26vw;
+  max-width: 24vw;
 
 }
+
+
+.search-container{
+  width: 490px;
+  display: block;
+  margin: 0 auto;
+}
+
+input#search-bar{
+  margin: 0 auto;
+  width: 100%;
+  height: 45px;
+  padding: 0 20px;
+  font-size: 1rem;
+  border: 1px solid #D0CFCE;
+  outline: none;
+  &:focus{
+    border: 1px solid #008ABF;
+    transition: 0.35s ease;
+    color: #008ABF;
+    &::-webkit-input-placeholder{
+      transition: opacity 0.45s ease; 
+  	  opacity: 0;
+     }
+    &::-moz-placeholder {
+      transition: opacity 0.45s ease; 
+  	  opacity: 0;
+     }
+    &:-ms-placeholder {
+     transition: opacity 0.45s ease; 
+  	 opacity: 0;
+     }    
+   }
+ }
+
+.search-icon{
+  position: relative;
+  float: right;
+  width: 75px;
+  height: 75px;
+  top: -62px;
+  right: -45px;
+}
+
+
 

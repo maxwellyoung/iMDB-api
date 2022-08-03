@@ -179,24 +179,24 @@ const AddForm = () => {
       duration: 0.5
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("form", {
+    className: "search-container",
     onSubmit: handleSubmit
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", {
-    htmlFor: "",
-    className: "search"
-  }, "search:", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", {
     onChange: handleTyping,
+    id: "search-bar",
+    placeholder: "Search",
     name: "welcome",
     className: "search-box",
     value: newMovie,
     type: "text"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", {
-    className: "button-48"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", {
+    className: "button mt-4"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
     className: "text"
   }, "Submit"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("ul", null, results.map(movie => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", {
     key: movie.id
   }, "  ", movie.title, " ", movie.description, "  ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", {
-    className: "button-2",
+    className: "button",
     onClick: () => handleAdd(movie)
   }, "Add"), " "))));
 };
@@ -243,7 +243,7 @@ function App() {
   }, "Maxwell's watchlist"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h2", {
     className: "quote has-text-centered  is-4 py-0"
   }, "iMDB API test")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("section", {
-    className: "has-text-centered title is-4 py-4"
+    className: "has-text-centered is-4 py-4"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__.Routes, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__.Route, {
     path: "/",
     element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_MovieList__WEBPACK_IMPORTED_MODULE_2__["default"], null)

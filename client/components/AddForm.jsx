@@ -33,16 +33,17 @@ const AddForm = () => {
     transition={{ duration: 0.5 }}>
       
       
-      <form onSubmit={handleSubmit}>
-        <label htmlFor="" className='search'>search:  
-          <input onChange={handleTyping} name='welcome' className='search-box' value={newMovie} type='text'/>
-        </label>
+      <form className='search-container' onSubmit={handleSubmit}>
+        
+          <input onChange={handleTyping} id="search-bar" placeholder="Search" name='welcome' className='search-box' value={newMovie} type='text'/>
+          {/* <img className="search-icon" src="http://www.endlessicons.com/wp-content/uploads/2012/12/search-icon.png" /> */}
+        
         <br />
-        <button className="button-48"><span className="text">Submit</span></button>
+        <button className="button mt-4"><span className="text">Submit</span></button>
 
       </form>
       <ul>
-        {results.map(movie => <li key={movie.id}>  {movie.title} {movie.description}  <button className="button-2" onClick={() => handleAdd(movie)}>Add</button> </li>)}
+        {results.map(movie => <li key={movie.id}>  {movie.title} {movie.description}  <button className="button" onClick={() => handleAdd(movie)}>Add</button> </li>)}
       </ul>
     </motion.div>
   );

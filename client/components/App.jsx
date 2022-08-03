@@ -23,7 +23,7 @@ function App () {
         <h1 className='has-text-centered title is-2 py-4'>Maxwell&apos;s watchlist</h1>
         <h2 className='quote has-text-centered  is-4 py-0'>iMDB API test</h2>
       </header>
-      <section className="has-text-centered title is-4 py-4">
+      <section className="has-text-centered is-4 py-4">
         <Routes>
           <Route path='/' element={<MovieList />} />
           <Route path='/add' element={<AddForm />} />
